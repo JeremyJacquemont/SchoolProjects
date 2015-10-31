@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="menu_drawer_title">
+        <item>Pictures</item>
+        <item>Texts</item>
+        <item>Videos</item>
+        <item>Audios</item>
+    </string-array>
+    <string-array name="menu_drawer_image">
+        <item>ic_action_picture</item>
+        <item>ic_action_labels</item>
+        <item>ic_action_video</item>
+        <item>ic_action_volume_on</item>
+    </string-array>
+</resources>

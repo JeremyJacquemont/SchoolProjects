@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="gsb_frais" Class="connexionDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=MSI-JÉRÉMY\SQLEXPRESS;Initial Catalog=gsb_frais;Integrated Security=True" SettingsObjectName="GSB.Properties.Settings" SettingsPropertyName="gsb_fraisConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.etat" Member="etat">
+    <Type Name="etat">
+      <Column Name="id" Type="System.String" DbType="Char(2) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="libelle" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Association Name="etat_fichefrais" Member="fichefrais" ThisKey="id" OtherKey="idEtat" Type="fichefrais" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fichefrais" Member="fichefrais">
+    <Type Name="fichefrais">
+      <Column Name="idVisiteur" Type="System.String" DbType="Char(4) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="mois" Type="System.String" DbType="Char(6) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="nbJustificatifs" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="montantValide" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="dateModif" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="idEtat" Type="System.String" DbType="Char(2)" CanBeNull="true" />
+      <Association Name="fichefrais_lignefraisforfait" Member="lignefraisforfait" ThisKey="idVisiteur,mois" OtherKey="idVisiteur,mois" Type="lignefraisforfait" />
+      <Association Name="fichefrais_lignefraishorsforfait" Member="lignefraishorsforfait" ThisKey="idVisiteur,mois" OtherKey="idVisiteur,mois" Type="lignefraishorsforfait" />
+      <Association Name="etat_fichefrais" Member="etat" ThisKey="idEtat" OtherKey="id" Type="etat" IsForeignKey="true" />
+      <Association Name="visiteur_fichefrais" Member="visiteur" ThisKey="idVisiteur" OtherKey="id" Type="visiteur" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fraisforfait" Member="fraisforfait">
+    <Type Name="fraisforfait">
+      <Column Name="id" Type="System.String" DbType="Char(3) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="libelle" Type="System.String" DbType="Char(20)" CanBeNull="true" />
+      <Column Name="montant" Type="System.Decimal" DbType="Decimal(5,2)" CanBeNull="true" />
+      <Association Name="fraisforfait_lignefraisforfait" Member="lignefraisforfait" ThisKey="id" OtherKey="idFraisForfait" Type="lignefraisforfait" />
+    </Type>
+  </Table>
+  <Table Name="dbo.lignefraisforfait" Member="lignefraisforfait">
+    <Type Name="lignefraisforfait">
+      <Column Name="idVisiteur" Type="System.String" DbType="Char(4) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="mois" Type="System.String" DbType="Char(6) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="idFraisForfait" Type="System.String" DbType="Char(3) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="quantite" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="fichefrais_lignefraisforfait" Member="fichefrais" ThisKey="idVisiteur,mois" OtherKey="idVisiteur,mois" Type="fichefrais" IsForeignKey="true" />
+      <Association Name="fraisforfait_lignefraisforfait" Member="fraisforfait" ThisKey="idFraisForfait" OtherKey="id" Type="fraisforfait" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.lignefraishorsforfait" Member="lignefraishorsforfait">
+    <Type Name="lignefraishorsforfait">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="idVisiteur" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+      <Column Name="mois" Type="System.String" DbType="Char(6) NOT NULL" CanBeNull="false" />
+      <Column Name="libelle" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="montant" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Association Name="fichefrais_lignefraishorsforfait" Member="fichefrais" ThisKey="idVisiteur,mois" OtherKey="idVisiteur,mois" Type="fichefrais" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.visiteur" Member="visiteur">
+    <Type Name="visiteur">
+      <Column Name="id" Type="System.String" DbType="Char(4) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="nom" Type="System.String" DbType="Char(30)" CanBeNull="true" />
+      <Column Name="prenom" Type="System.String" DbType="Char(30)" CanBeNull="true" />
+      <Column Name="login" Type="System.String" DbType="Char(20)" CanBeNull="true" />
+      <Column Name="mdp" Type="System.String" DbType="Char(20)" CanBeNull="true" />
+      <Column Name="adresse" Type="System.String" DbType="Char(30)" CanBeNull="true" />
+      <Column Name="cp" Type="System.String" DbType="Char(5)" CanBeNull="true" />
+      <Column Name="ville" Type="System.String" DbType="Char(30)" CanBeNull="true" />
+      <Column Name="dateEmbauche" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="isComptable" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="visiteur_fichefrais" Member="fichefrais" ThisKey="id" OtherKey="idVisiteur" Type="fichefrais" />
+    </Type>
+  </Table>
+</Database>

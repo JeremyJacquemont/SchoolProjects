@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    //General
+    <string name="app_name">MDL - AndroidApp</string>
+    <string name="drawer_close">Close</string>
+    <string name="drawer_opened">Menu</string>
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
+    <string name="ok">OK</string>
+
+    //Title Activity
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_detail_item">DetailItemActivity</string>
+    <string name="title_activity_add_item">AddItemActivity</string>
+    <string name="title_activity_edit_item">EditItemActivity</string>
+
+    //Drawer Items
+    <string-array name="drawer_items">
+        <item>Accueil</item>
+        <item>Réservations</item>
+        <item>Paramètres</item>
+        <item>Déconnection</item>
+    </string-array>
+
+    <array name="drawer_items_icons">
+        <item>@drawable/ic_action_view_as_grid</item>
+        <item>@drawable/ic_action_event</item>
+        <item>@drawable/ic_action_settings</item>
+        <item>@drawable/ic_action_cancel</item>
+    </array>
+
+    //Main Activity
+    <string name="disconnect_sucessful">Vous êtes bien déconnecter</string>
+
+    //Login Activity
+    <string name="username_login">Login</string>
+    <string name="password_login">Mot de passe</string>
+    <string name="text_login">Se connecter</string>
+    <string name="send_login">Envoyer</string>
+    <string name="login_loading">Chargement! Veuillez patienter...</string>
+
+    //Home Fragement
+    <string name="welome_text_home">Bienvenue </string>
+
+    //EditItem Activity
+    <string name="title_edition_activity">Edition de la réservation</string>
+    <string name="update_text">Mise à jour...</string>
+
+    //DetailItem Activity
+    <string name="delete_text">Suppression en cours...</string>
+    <string name="confirmation_title_delete">Suppression</string>
+    <string name="confirmation_text_delete">Voulez-vous supprimer cette évenement?</string>
+
+    //AddItem Activity
+    <string name="title_add_activity">Ajout d\'une réservation</string>
+    <string name="add_text">Ajout en cours...</string>
+
+    //Errors
+    <string name="error_internet_title">Pas de connexion internet</string>
+    <string name="error_internet_text">Aucune connexion internet n\'a été détécté! \nVeuillez vous reconnecter et relancer l\'application.</string>
+    <string name="error_fragement">MainActivity - Error with Fragment</string>
+    <string name="error_login">Veuillez saisir vos informations</string>
+    <string name="error_reservation">Reservation - Error : </string>
+    <string name="error_parameter">Parameter - Error : </string>
+    <string name="error_get_entries">Get Entries - Error : </string>
+    <string name="error_rooms">Rooms - Error : </string>
+    <string name="error_detail_item">Detail Item - Error : </string>
+
+    //Items
+    <string name="text_start_date">Date début:</string>
+    <string name="text_end_date">Date fin:</string>
+
+    //Settings
+    <string name="pref_header_user">Mes paramètres</string>
+    <string name="pref_name_user">Nom d\'utilisateur</string>
+    <string name="pref_default_name_user">Utilisateur</string>
+    <string name="pref_mail_user">Adresse E-mail</string>
+    <string name="pref_default_mail_user">example@example.com</string>
+    <string name="pref_password_user">Mot de passe</string>
+
+    <string name="pref_header_general">General</string>
+    <string name="pref_about">A propos de l\'application</string>
+    <string name="pref_about_text">Cette application a été développée dans le cadre du BTS SIO. \nCelle-ci prend place au sein du contexte M2L (Maison des Ligues de Lorraine).</string>
+    <string name="pref_version">Version actuelle</string>
+    <string name="pref_version_text">Version actuelle de l\'application : 1.0</string>
+
+    //MultipleEditText
+    <string name="old_password">Ancien mot de passe: </string>
+    <string name="new_password">Nouveau mot de passe: </string>
+
+    //Layout
+    <string name="name_layout">Nom</string>
+    <string name="name_event_layout">Nom de l\'évenment...</string>
+    <string name="start_date_layout">Date début</string>
+    <string name="end_date_layout">Date fin</string>
+    <string name="create_layout">Crée par</string>
+    <string name="room_layout">Salle</string>
+</resources>

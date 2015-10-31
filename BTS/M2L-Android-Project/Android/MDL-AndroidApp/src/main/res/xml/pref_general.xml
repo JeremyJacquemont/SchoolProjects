@@ -1,0 +1,21 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.mdl.utils.CustomDialogPreference
+        android:key="about_text"
+        android:dialogIcon="@android:drawable/ic_dialog_info"
+        android:title="@string/pref_about"
+        android:summary="@string/pref_about_text"
+        android:dialogMessage="@string/pref_about_text"
+        android:positiveButtonText="Ok"
+        android:negativeButtonText="@null"/>
+
+    <com.mdl.utils.CustomDialogPreference
+        android:key="version_text"
+        android:dialogIcon="@android:drawable/ic_dialog_info"
+        android:title="@string/pref_version"
+        android:summary="@string/pref_version_text"
+        android:dialogMessage="@string/pref_version_text"
+        android:positiveButtonText="Ok"
+        android:negativeButtonText="@null"/>
+
+</PreferenceScreen>

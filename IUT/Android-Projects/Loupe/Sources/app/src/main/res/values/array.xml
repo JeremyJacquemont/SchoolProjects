@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="listLanguageEntries">
+        <item>Français</item>
+        <item>Anglais</item>
+        <item>Italien</item>
+        <item>Allemand</item>
+        <item>Espagnol</item>
+    </string-array>
+
+    <string-array name="listLanguageEntryValues">
+        <item>fra</item>
+        <item>eng</item>
+        <item>ita</item>
+        <item>deu</item>
+        <item>spa</item>
+    </string-array>
+
+    <string-array name="listColorButtonEntries">
+        <item>Foncée</item>
+        <item>Claire</item>
+    </string-array>
+    <string-array name="listColorButtonEntryValues">
+        <item>dark</item>
+        <item>light</item>
+    </string-array>
+</resources>

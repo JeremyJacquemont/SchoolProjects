@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.lpiem.apps.loupelec.utilities.customUiElement.CustomTextView
+        android:id="@+id/tv_choice_dialog"
+        android:text="@string/dialog_choice_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.lpiem.apps.loupelec.utilities.customUiElement.CustomButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_choice_add"
+            android:id="@+id/btn_add_choice_keyword"
+            android:layout_gravity="end"
+            android:layout_weight="1" />
+
+        <com.lpiem.apps.loupelec.utilities.customUiElement.CustomButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_choice_choice"
+            android:id="@+id/btn_use_choice_keyword"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

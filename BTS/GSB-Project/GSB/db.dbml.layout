@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="connexion">
+  <DataContextMoniker Name="/connexionDataContext" />
+  <nestedChildShapes>
+    <classShape Id="16d23608-c8cd-4129-8afd-97231dbc1ceb" absoluteBounds="0.75, 0.875, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/connexionDataContext/etat" />
+      <nestedChildShapes>
+        <elementListCompartment Id="187e5c50-cf5e-4633-819c-6444e79df8e6" absoluteBounds="0.765, 1.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ca54542f-f998-4333-a351-5fbf5aa0d179" absoluteBounds="3.5, 3.5, 2, 1.9631982421874987">
+      <DataClassMoniker Name="/connexionDataContext/fichefrais" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4716521e-fbc0-4b43-9166-ed0dba3a9c96" absoluteBounds="3.515, 3.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1a3029e2-30fd-4190-b664-e20e194ede20" absoluteBounds="3.5, 0.75, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/connexionDataContext/fraisforfait" />
+      <nestedChildShapes>
+        <elementListCompartment Id="aaa0ee04-8782-450b-ace2-62eb7050c169" absoluteBounds="3.515, 1.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="09f73068-706f-4df8-868c-85b08e28fb8e" absoluteBounds="6.25, 2.625, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/connexionDataContext/lignefraisforfait" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5c5555a7-df75-443b-9687-4e7e0d581eb4" absoluteBounds="6.265, 3.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f39e6201-9d0c-40c5-ba9a-7970ddf2be7f" absoluteBounds="6.25, 5.75, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/connexionDataContext/lignefraishorsforfait" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5f14f5b0-fffe-404d-8bfc-fa061ad99beb" absoluteBounds="6.265, 6.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 2.06899251302083); (3.125 : 2.44399251302083); (3.125 : 4.48159912109375); (3.5 : 4.48159912109375)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/connexionDataContext/etat/etat_fichefrais" />
+      <nodes>
+        <classShapeMoniker Id="16d23608-c8cd-4129-8afd-97231dbc1ceb" />
+        <classShapeMoniker Id="ca54542f-f998-4333-a351-5fbf5aa0d179" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 3.85179768880208); (6.25 : 3.85179768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/connexionDataContext/fichefrais/fichefrais_lignefraisforfait" />
+      <nodes>
+        <classShapeMoniker Id="ca54542f-f998-4333-a351-5fbf5aa0d179" />
+        <classShapeMoniker Id="09f73068-706f-4df8-868c-85b08e28fb8e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 1.44314697265625); (7.25 : 1.44314697265625); (7.25 : 2.625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/connexionDataContext/fraisforfait/fraisforfait_lignefraisforfait" />
+      <nodes>
+        <classShapeMoniker Id="1a3029e2-30fd-4190-b664-e20e194ede20" />
+        <classShapeMoniker Id="09f73068-706f-4df8-868c-85b08e28fb8e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.5 : 5.4631982421875); (4.5 : 6.73159912109375); (6.25 : 6.73159912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/connexionDataContext/fichefrais/fichefrais_lignefraishorsforfait" />
+      <nodes>
+        <classShapeMoniker Id="ca54542f-f998-4333-a351-5fbf5aa0d179" />
+        <classShapeMoniker Id="f39e6201-9d0c-40c5-ba9a-7970ddf2be7f" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="e22ee0b7-e038-429f-a3df-a8875216d24f" absoluteBounds="0.75, 3.125, 2, 2.7324039713541661">
+      <DataClassMoniker Name="/connexionDataContext/visiteur" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9554651c-ab1a-4018-8d8d-a246c1fa3a8e" absoluteBounds="0.76500000000000012, 3.585, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 3.92829956054687); (3.04166666666667 : 3.92829956054687 : JumpStart); (3.20833333333333 : 3.92829956054687 : JumpEnd); (3.5 : 3.92829956054687)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/connexionDataContext/visiteur/visiteur_fichefrais" />
+      <nodes>
+        <classShapeMoniker Id="e22ee0b7-e038-429f-a3df-a8875216d24f" />
+        <classShapeMoniker Id="ca54542f-f998-4333-a351-5fbf5aa0d179" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

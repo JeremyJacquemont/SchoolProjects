@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Global -->
+    <string name="app_name">Loup\'Elec</string>
+    <string name="back">Retour</string>
+    <string name="cancel">Annuler</string>
+    <string name="validate">Valider</string>
+    <string name="yes">OUI</string>
+    <string name="no">NON</string>
+    <string name="share">Partager</string>
+    <string name="error_occured">Une erreur est survenu, veuillez réessayer plus tard.</string>
+    <string name="title_spinner_list">Filtrer: </string>
+
+    <!-- Camera -->
+    <string name="camera_button_capture">Capture</string>
+    <string name="camera_button_more">+</string>
+    <string name="camera_button_less">-</string>
+    <string name="camera_button_parameters">Paramètres</string>
+    <string name="camera_button_gallery">Galerie</string>
+
+    <string name="camera_missing_title">Désolé</string>
+    <string name="camera_missing_content">Une camera est nécessaire pour pouvoir utiliser cette application.</string>
+    <string name="camera_missing_button">Fermer</string>
+
+    <string name="camera_toast_start_capture">Capture de l\'image en cours…</string>
+    <string name="camera_toast_end_capture">Capture de l\'image terminée</string>
+    <string name="camera_toast_ocr_start">Capture OCR en cours…</string>
+    <string name="camera_toast_ocr_end">Capture OCR terminée</string>
+
+    <!-- Preferences -->
+    <string name="preference_key_button_background">buttonBackground</string>
+    <string name="preference_key_activity_background">activityBackground</string>
+    <string name="preference_key_font_color">fontColor</string>
+    <string name="preference_key_font_size">fontSize</string>
+    <string name="preference_key_ocr_toogle">ocrOnOff</string>
+    <string name="preference_key_ocr_imgTxt">ocrImgTxt</string>
+    <string name="preference_key_ocr_txtOnly">ocrTxtOnly</string>
+    <string name="preference_key_ocr_languages">ocrListLanguage</string>
+    <string name="preference_key_camera_flash">enableFlash</string>
+    <string name="preference_key_zoom_controls_size">zoomControlsSize</string>
+    <string name="preference_key_button_images">useImages</string>
+    <string name="preference_key_button_list_color">useImagesList</string>
+
+    <string name="preference_title_ocr">OCR</string>
+    <string name="preference_title_ocr_toggle">Activer/Désactiver OCR</string>
+    <string name="preference_title_ocr_imgTxt">Sauvegarder Images et Textes</string>
+    <string name="preference_title_ocr_txtOnly">Uniquement sauvegarder le texte</string>
+    <string name="preference_title_ocr_language">Langue utilisée pour l\'OCR</string>
+    <string name="preference_title_style">Personnalisation de l\'interface</string>
+    <string name="preference_title_style_activity_background">Couleur de fond de l\'application</string>
+    <string name="preference_title_style_button_background">Couleur de fond des boutons</string>
+    <string name="preference_title_style_font_color">Couleur de la police d\'écriture</string>
+    <string name="preference_title_style_font_size">Taille de la police d\'écriture</string>
+    <string name="preference_title_camera">Préférence Caméra</string>
+    <string name="preference_title_camera_flash">Activer/Désactiver le flash</string>
+    <string name="preference_title_zoom_controls_size">Taille des boutons de Zoom</string>
+    <string name="preference_title_button_images">Utiliser des images pour les boutons</string>
+    <string name="preference_title_button_list_color">Sélectionner la couleur des boutons</string>
+
+    <string name="preference_default_value_language">fra</string>
+    <string name="preference_default_value_button_color">dark</string>
+
+    <!-- Detail Activity -->
+    <string name="detail_delete_title">Suppression</string>
+    <string name="detail_delete_message">Êtes-vous sûr de vouloir supprimer ce document?</string>
+
+    <string name="detail_button_edit">Mot-clé</string>
+    <string name="detail_button_share">Partager</string>
+    <string name="detail_button_delete">Supprimer</string>
+
+    <!-- Dialogs -->
+    <string name="dialog_choice_title">Que voulez-vous faire?</string>
+    <string name="dialog_choice_add">Ajouter</string>
+    <string name="dialog_choice_choice">Choisir</string>
+
+    <string name="dialog_add_title">Entrer le mot-clé:</string>
+    <string name="dialog_add_error">Veuillez entrer une valeur</string>
+
+    <string name="dialog_use_title">Sélectionner un mot-clé:</string>
+    <string name="dialog_use_error">Veuillez sélectionner une valeur</string>
+    
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Color Picker</string>
+    <string name="press_color_to_apply">Choisissez une couleur</string>
+    <string name="edit_text_color_picker">HEX</string>
+    <string name="text_view_color_picker">↓</string>
+
+</resources>

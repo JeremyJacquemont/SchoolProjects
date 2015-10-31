@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FileManagement</string>
+    <string name="action_delete">Delete</string>
+    <string name="positive_button">Yes</string>
+    <string name="negative_button">No</string>
+    <string name="confirm_action">Are you sure?</string>
+    <string name="drawer_open">Select an element</string>
+    <string name="neutral_button">OK</string>
+    <string name="download_file">Downloading file. Please wait…</string>
+
+    <string name="xml_not_found">Not Found</string>
+    <string name="xml_load_ok">"Refresh XML Finish"</string>
+
+    <string name="error_no_connection">Please, check your connection internet!</string>
+    <string name="error_xml_not_found">XML File not found…</string>
+    <string name="error_unknown_type">MEDIA_TYPE: Unknown type!</string>
+
+    <string name="download_ok">Download finished!</string>
+    <string name="error_download_write_file">Error on write Media file!</string>
+    <string name="error_download_not_found">Media not found!</string>
+    <string name="error_download_unknown_error">Unknown error</string>
+
+    <string name="debug_key_file_not_exist">File - not exist</string>
+    <string name="debug_key_file_exist">File - exist</string>
+    <string name="debug_key_file_update">File - update</string>
+
+    <string name="debug_key_bdd_old">{old}</string>
+    <string name="debug_key_bdd_new">{new}</string>
+    <string name="debug_key_update_bdd">Upgrading database from version {old} to {new}</string>
+
+</resources>
